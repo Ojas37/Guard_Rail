@@ -1,0 +1,49 @@
+# Backend requirements
+# FastAPI, ONNX, Presidio, asyncpg, redis, slowapi
+# AegisGuard API - requirements.txt
+# Teammate 1 core dependencies (others append theirs below)
+
+# ── API Framework ──────────────────────────────────────────────────────────
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+gunicorn==22.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+loguru==0.7.0
+python-dotenv==1.0.0
+
+# ── Teammate 2: Auth & Redis ───────────────────────────────────────────────
+redis==5.0.0
+slowapi==0.1.9
+bcrypt==4.1.0
+python-jose[cryptography]==3.3.0
+
+# ── Teammate 3: ML Inference ───────────────────────────────────────────────
+transformers==4.38.0
+onnxruntime==1.17.0
+optimum==1.16.0
+presidio-analyzer==2.2.0
+presidio-anonymizer==2.2.0
+spacy==3.7.0
+sentence-transformers==2.3.0
+
+# ── Teammate 4: Templates & Scoring ───────────────────────────────────────
+cachetools==5.3.0
+
+# ── Teammate 5: DB, Metrics, Dashboard ────────────────────────────────────
+asyncpg==0.29.0
+prometheus-fastapi-instrumentator==6.1.0
+streamlit==1.30.0
+plotly==5.18.0
+psycopg2-binary==2.9.9
+
+# ── Testing ────────────────────────────────────────────────────────────────
+pytest==7.4.0
+pytest-asyncio==0.23.0
+httpx==0.26.0
+pytest-cov==4.1.0
+locust==2.20.0
+
+# ── Code Quality ───────────────────────────────────────────────────────────
+ruff==0.1.9
+mypy==1.8.0

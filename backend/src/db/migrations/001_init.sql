@@ -1,0 +1,2 @@
+-- PRD Section 8 schema + partitions
+-- Initial database schema for AegisGuard.
